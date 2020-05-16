@@ -8,9 +8,9 @@ class HomeController extends BaseController
 {
 	public function index()
 	{
-		$nome = 'David';
-		$sobre = 'Junior';
+		$this->setPageTitle('Página Inicial');
+		$this->view->nome = "David Junior";
 
-		$this->renderView("home/index", compact('nome', 'sobre'));
+		$this->renderView("home/index", "layout");
 	}
 }

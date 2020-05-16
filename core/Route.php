@@ -109,5 +109,7 @@ class Route
 				exit;
 			}
 		}
+		else
+			Container::pageNotFound();
 	}
 }
